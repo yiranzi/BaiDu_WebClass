@@ -4,6 +4,7 @@ window.onload = function()
   var oLis = oArtical.getElementsByTagName("li");
   var iClick = 1;
 
+
   function DrawColor(i)
   {
     oLis[iClick].style.backgroundColor = "";
@@ -37,6 +38,15 @@ window.onload = function()
   var oRiliDay = document.getElementById("riliday");
   var oDays = oRiliDay.getElementsByTagName("li");
   var iDayClick = 0;
+
+  ReNumber()
+    function ReNumber()
+    {
+      for(var i=0;i<oDays.length;i++)
+      {
+        oDays[i].innerHTML = i+1;
+      }
+    }
   function DrawDayColor(i)
   {
     oDays[iDayClick].style.backgroundColor = "";
